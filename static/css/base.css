@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+body {
+    padding-top: 64px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 112px;
+    }
+  }
