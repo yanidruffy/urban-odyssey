@@ -2,5 +2,95 @@
 {% load static %}
 
 {% block content %}
-<div class="container text-success">Hello World!</div>
+
+<div id="carousel-hero" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+      aria-current="true"></button>
+    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/carousel-pd.jpg' %}" width="100%" height="100%" aria-hidden="true"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Peak Design</h1>
+          <p class="opacity-75">check this out</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Buy Now</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/carousel-pd.jpg' %}" width="100%" height="100%" aria-hidden="true"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Peak Design</h1>
+          <p class="opacity-75">check this out</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Buy Now</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/carousel-pd.jpg' %}" width="100%" height="100%" aria-hidden="true"
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>Peak Design</h1>
+          <p class="opacity-75">check this out</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Buy Now</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hero" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-hero" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="my-5 mt-0 mb-0">
+  <div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+      <h2 class="text-body-emphasis">Company Statement</h2>
+      <p class="col-lg-8 mx-auto lead">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="my-5 mt-0 mb-0 bg-dark text-white">
+  <div class="p-5 text-center">
+    <div class="container py-5">
+      <h2 class="text-white">Bestseller</h2>
+      <p class="col-lg-8 mx-auto lead">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="my-5 mt-0 mb-0">
+  <div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+      <h2 class="text-body-emphasis">Placeholder</h2>
+      <p class="col-lg-8 mx-auto lead">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+</div>
 {% endblock %}

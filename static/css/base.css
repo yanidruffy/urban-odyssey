@@ -5,8 +5,14 @@ body {
     padding-top: 64px;
 }
 
+#carousel-hero {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
 @media (min-width: 992px) {
     body {
         padding-top: 112px;
     }
-  }
+}
