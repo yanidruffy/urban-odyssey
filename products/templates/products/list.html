@@ -3,10 +3,46 @@
 
 {% block content %}
 
-{% for product in products %}
-    <div>
-       <p>{{ product.name }}</p>
-        <p>${{ product.price }}</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-9 mx-auto">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h2 class="fw-bold">
+                        {% if category %}{{ category.name }}{% else %}All Products{% endif %}
+                    </h2>
+                    <hr class="w-50 mb-1 mx-auto">
+                </div>
+                <p class="text-muted">Total Products: {{ products|length }}</p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                {% for product in products %}
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="">
+                            <div class="image-container">
+                                <img class="card-img-top img-fluid"
+                                    src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'images/no_image.png' %}{% endif %}"
+                                    alt="{{ product.name }}">
+                            </div>
+                        </a>
+                        <div class="card-body text-center d-flex flex-column justify-content-end">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text fw-bold">${{ product.price }}</p>
+                            {% if product.rating %}
+                            <small class="text-muted">
+                                <i class="fas fa-star me-1"></i>{{ product.rating }} / 5
+                            </small>
+                            {% else %}
+                            <small class="text-muted">No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-{% endfor %}
+</div>
+
 {% endblock %}
