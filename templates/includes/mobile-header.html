@@ -6,7 +6,7 @@
         </div>
     </a>
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0 bg-dark" aria-labelledby="mobile-search">
-        <form class="form" method="GET" action="">
+        <form class="form" method="GET" action="{% url 'products:product_list' %}">
             <div class="input-group w-100">
                 <input class="form-control border border-white text-white bg-dark" type="text" name="q" placeholder="Search our site">
                 <button class="btn btn-outline-light border border-white" type="submit">

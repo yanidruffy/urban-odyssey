@@ -31,7 +31,7 @@
 				</a>
 			</div>
 			<div class="col-12 col-lg-4 my-auto py-2 py-lg-0">
-				<form method="GET" action="">
+				<form method="GET" action="{% url 'products:product_list' %}">
 					<div class="input-group w-100">
 						<input class="form-control border border-white text-white bg-dark" type="text"
 							name="q" placeholder="Search our site">
@@ -90,6 +90,17 @@
 			</nav>
 		</div>
 	</header> 
+
+	{% if messages %}
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+			{% for message in messages %}
+				<p>{{ message }}</p>
+			{% endfor %}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	{% endif %}
+
+
 	<main>
 	{% block content %}{% endblock %}
 	</main>
