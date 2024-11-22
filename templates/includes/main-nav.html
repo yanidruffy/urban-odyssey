@@ -1,35 +1,33 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-white" href="#" id="products-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
-            </div>
+            <ul class="dropdown-menu border-0" aria-labelledby="products-link">
+                <li><a href="{% url 'products:product_list' %}" class="dropdown-item">All Products</a></li>
+                <li><a href="" class="dropdown-item">By Price</a></li>
+                <li><a href="" class="dropdown-item">By Rating</a></li>
+                <li><a href="" class="dropdown-item">By Category</a></li>
+            </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='aer' %}">
                 Aer
             </a>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='peak_design' %}">
                 Peak Design
             </a>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='tomtoc' %}">
                 TomToc
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-white" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sale
             </a>
         </li>
