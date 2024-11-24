@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col text-center mt-3">
                     <h2 class="fw-bold">
-                        {% if category %}{{ category.name }}{% else %}All Products{% endif %}
+                        {% if category %}{{ category.friendly_name }}{% else %}All Products{% endif %}
                     </h2>
                     <hr class="w-50 mx-auto">
                     <p class="text-uppercase">Free delivery on orders over ${{ free_delivery_threshold }}</p>
