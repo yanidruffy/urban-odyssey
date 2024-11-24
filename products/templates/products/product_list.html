@@ -12,6 +12,8 @@
                     <h2 class="fw-bold">
                         {% if category %}{{ category.name }}{% else %}All Products{% endif %}
                     </h2>
+                    <hr class="w-50 mx-auto">
+                    <p class="text-uppercase">Free delivery on orders over ${{ free_delivery_threshold }}</p>
                     <hr class="w-50 mb-1 mx-auto">
                 </div>
                 <p class="text-muted">Total Products: {{ products|length }}</p>
