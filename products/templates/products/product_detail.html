@@ -57,20 +57,19 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12">
-							<input type="submit" class="btn btn-dark text-uppercase mt-5" value="Add to Bag">
-							<br>
-							<a href="{% url 'products:product_list' %}" class="btn btn-outline-dark btn-lg">
+						<div class="col-12 d-flex mt-5">
+							<a href="{% url 'products:product_list' %}" class="btn btn-outline-dark btn-md">
 								<span>
 									<i class="fas fa-chevron-left"></i>
 								</span>
 								<span class="text-uppercase">Keep Shopping</span>
 							</a>
+							<input type="submit" class="btn btn-dark text-uppercase btn-md" value="Add to Bag">
 						</div>
 						<input type="hidden" name="redirect_url" value="{{ request.path }}">
 					</div>
-				</form>
-				
+				</form>				
+
 			</div>
 		</div>
 	</div>
