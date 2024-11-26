@@ -4,15 +4,16 @@
      * Disable +/- buttons outside 1-99 range
      */
     function handleEnableDisable(itemId) {
-        var currentValue = parseInt($(`.id_qty_${itemId}`).val());
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
 
-        $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-        $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+        console.log('Input checked');
+        console.log('Current Value:', currentValue);
     }
 
-    console.log("QTY: ", $('.qty_input'))
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
@@ -25,6 +26,25 @@
     $('.qty_input').change(function() {
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
+    });
+
+    // Restrict input values to within the 1-99 range when typing
+    $('.qty_input').on('input', function() {
+        var itemId = $(this).data('item_id');
+        var currentValue = parseInt($(this).val());
+
+        if (1 < currentValue > 99) {
+            $(this).val(99);
+        }
+        handleEnableDisable(itemId);
+    });
+
+    // Prevent submission when pressing Enter inside the quantity field
+    $('.qty_input').on('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            handleEnableDisable(itemId);
+        }
     });
 
     // Increment quantity
