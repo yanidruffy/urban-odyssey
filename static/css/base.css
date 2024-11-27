@@ -11,6 +11,11 @@ body {
     margin: 0 auto;
 }
 
+.custom-toast {
+    width: 100%;
+    max-width: 100%;
+}
+
 @media (min-width: 992px) {
     body {
         padding-top: 112px;
