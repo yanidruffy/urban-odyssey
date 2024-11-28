@@ -1,5 +1,4 @@
 <script type="text/javascript">
-    console.log('loaded!');
     /* 
      * Disable +/- buttons outside 1-99 range
      */
@@ -10,8 +9,6 @@
 
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-        console.log('Input checked');
-        console.log('Current Value:', currentValue);
     }
 
 
@@ -50,9 +47,7 @@
     // Increment quantity
     $('.increment-qty').click(function(e) {
         e.preventDefault();
-        console.log('Increment button clicked!');
         var itemId = $(this).data('item_id');
-        console.log('Increment clicked for item:', itemId);
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
         var currentValue = parseInt($(closestInput).val());
@@ -63,9 +58,7 @@
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
         e.preventDefault();
-        console.log('Decrement button clicked!');
         var itemId = $(this).data('item_id');
-        console.log('Decrement clicked for item:', itemId);
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
         var currentValue = parseInt($(closestInput).val());
