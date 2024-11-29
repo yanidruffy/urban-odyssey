@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block extra_title %}
+- Order Confirmation
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="text-uppercase mb-4">Thank you for your order!</h2>
+            <hr>
+            <p>Your order has been successfully placed. A confirmation email has been sent to
+                <strong>{{ order.email }}</strong>.</p>
+            <p>You can expect your items to arrive at the delivery address provided below.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Order Summary -->
+        <div class="col-12 col-lg-6">
+            <h3>Order Summary</h3>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th class="text-end">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in order.lineitems.all %}
+                    <tr>
+                        <td><strong>{{ item.product.name }}</strong></td>
+                        <td class="text-center">{{ item.quantity }}</td>
+                        <td class="text-end">${{ item.lineitem_total|floatformat:2 }}</p</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" class="text-right">Subtotal:</td>
+                        <td class="text-end">${{ order.order_total|floatformat:2 }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-right">Delivery:</td>
+                        <td class="text-end">${{ order.delivery_cost|floatformat:2 }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-right"><strong>Grand Total:</strong></td>
+                        <td class="text-end"><strong>${{ order.grand_total|floatformat:2 }}</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- Delivery Address -->
+        <div class="col-12 col-lg-6">
+            <h3>Delivery Address</h3>
+            <hr class="mb-4">
+            <p><strong>{{ order.full_name }}</strong></p>
+            <p>{{ order.street_address1 }}</p>
+            {% if order.street_address2 %}
+                <p>{{ order.street_address2 }}</p>
+            {% endif %}
+            <p>{{ order.town_or_city }}</p>
+            {% if order.county %}
+                <p>{{ order.county }}</p>
+            {% endif %}
+            {% if order.postcode %}
+            <p>{{ order.postcode }}</p>
+            {% endif %}
+            <p>{{ order.country }}</p>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Code -->
+    <div class="row mb-3">
+        <div class="col">
+            <div class="confirmation-section p-4 rounded shadow-sm">
+                <h4 class="mb-3">Your Confirmation Number</h4>
+                <p class="font-weight-bold text-dark">
+                    Your confirmation number is: <strong>#{{ order.order_number }}</strong>
+                </p>
+                <p class="text-muted">
+                    Please keep this confirmation number for your records. Your order is confirmed and will be processed shortly.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div class="col text-start">
+            <a href="{% url 'products:product_list' %}" class="btn btn-dark btn-md">
+                <i class="fas fa-shopping-cart"></i> Continue Shopping
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
