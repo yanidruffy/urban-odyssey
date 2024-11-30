@@ -4,6 +4,7 @@ click==8.1.7
 crispy-bootstrap5==2024.10
 Django==4.2.16
 django-allauth==0.54.0
+django-countries==7.6.1
 django-crispy-forms==2.3
 oauthlib==3.2.2
 pathspec==0.12.1
