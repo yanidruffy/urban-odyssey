@@ -100,10 +100,17 @@
 
     <div class="row">
         <div class="col text-start">
+            {% if from_profile %}
+            <a href="{% url 'profiles:profile' %}" class="btn btn-dark btn-md">
+                <i class="fas fa-angle-left"></i> Back to Profile
+            </a>
+            {% else %}
             <a href="{% url 'products:product_list' %}" class="btn btn-dark btn-md">
                 <i class="fas fa-shopping-cart"></i> Continue Shopping
             </a>
+            {% endif %}
         </div>
+        
     </div>
 </div>
 {% endblock %}
