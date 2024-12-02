@@ -1,0 +1,23 @@
+Hi {{ order.full_name }},
+
+Thanks for placing an order with Urban Odyssey! Here’s the rundown of what you got:
+
+Order Number: {{ order.order_number }}
+Date Ordered: {{ order.date }}
+Order Total: ${{ order.order_total }}
+Delivery Cost: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+We’ll be shipping your items to:
+{{ order.street_address1 }}
+{{ order.town_or_city }}, {{ order.country }}
+
+If we need to reach you, we’ll use the number you gave us: {{ order.phone_number }}.
+
+If you have any questions, contact us at {{ contact_email }}. We’re happy to help!
+
+Thanks for shopping with us – we can’t wait for you to enjoy your new gear!
+
+Cheers,
+
+The Urban Odyssey Team
