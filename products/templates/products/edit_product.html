@@ -2,26 +2,21 @@
 {% load static %}
 
 {% block extra_title %}
-- Add Product
+- Edit Product
 {% endblock %}
 
 {% block content %}
 <div class="container">
     <div class="row">
         <div class="col">
-            <hr>
-            <h2 class="text-uppercase mb-4">Add Product</h2>
-            <hr>
+            <h2 class="text-uppercase mb-4">Edit Product</h2>
         </div>
     </div>
-
     <div class="row">
-        <!-- Product Form -->
         <div class="col-12 col-lg-6 offset-lg-3">
-            <form method="POST" action="{% url 'products:add_product' %}" enctype="multipart/form-data" class="p-4 shadow-sm rounded">
+            <form method="POST" action="{% url 'products:edit_product' product.id %}" enctype="multipart/form-data" class="p-4 shadow-sm rounded">
                 {% csrf_token %}
                 {{ form|crispy }}
-
                 <div class="text-start mt-4">
                     <a href="{% url 'products:product_list' %}" class="btn btn-outline-dark btn-md">
                         <span>
@@ -30,7 +25,7 @@
                         Cancel
                     </a>
                     <button type="submit" class="btn btn-dark btn-md">
-                        Add Product
+                        Save Changes
                         <span>
                             <i class="fas fa-save"></i>
                         </span>

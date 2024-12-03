@@ -66,6 +66,12 @@
 									</button>
 								</div>
 							</div>
+							{% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="{% url 'products:edit_product' product.id %}">Edit</a> | 
+                                    <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
+                                </small>
+                            {% endif %}
 						</div>						
 						<div class="col-12 d-flex mt-5">
 							<a href="{% url 'products:product_list' %}" class="btn btn-outline-dark btn-md">

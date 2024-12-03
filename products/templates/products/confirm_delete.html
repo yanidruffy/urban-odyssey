@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+- Confirm Delete
+{% endblock %}
+
+{% block content %}
+{% if user.is_superuser %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="text-uppercase text-danger mb-4">Confirm Delete</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 text-center">
+            <p>Are you sure you want to delete <strong>{{ product.name }}</strong>?</p>
+            <form method="POST" action="{% url 'products:delete_product' product.id %}">
+                {% csrf_token %}
+                <a href="{% url 'products:product_list' %}" class="btn btn-outline-dark btn-md">
+                    <i class="fas fa-chevron-left"></i> Cancel
+                </a>
+                <button type="submit" class="btn btn-danger btn-md">
+                    Confirm Delete
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="container text-center mt-5">
+    <h3 class="text-danger">Access Denied</h3>
+    <p>You do not have permission to access this page.</p>
+</div>
+{% endif %}
+{% endblock %}
