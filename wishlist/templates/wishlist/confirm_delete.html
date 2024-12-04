@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card p-4 shadow-sm">
+                <div class="card-body text-center">
+                    <h4 class="text-danger">Confirm Wishlist Deletion</h4>
+                    <p>Are you sure you want to delete all items from your wishlist?</p>
+                    <form method="POST" action="{% url 'wishlist:delete_wishlist' %}">
+                        {% csrf_token %}
+                        <a href="{% url 'wishlist:wishlist_list' %}" class="btn btn-outline-dark btn-md">Cancel</a>
+                        <button type="submit" class="btn btn-danger">Confirm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
