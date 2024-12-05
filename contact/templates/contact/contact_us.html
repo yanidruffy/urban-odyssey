@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container my-5">
 	<div class="row justify-content-center">
 		<div class="col-12 col-md-8">
 			<div class="card p-4 shadow-sm">
 				<div class="card-body">
-					<h4 class="mb-4">Contact Us</h4>
+					<h4 class="text-uppercase mb-4">Contact Us</h4>
 					<form method="post">
 						{% csrf_token %}
 						{{ contact_form|crispy }}

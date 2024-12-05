@@ -1,9 +1,15 @@
 {% load static %}
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark text-white">
-    <div class="d-flex align-items-center mx-3">
+    <div class="col-md-3 d-flex align-items-center mx-3">
+        Newsletter/Subscription
+    </div>
+    <div class="col-md-3 d-flex justify-content-center">
         <a href="{% url 'home:home' %}" class="text-uppercase text-white text-decoration-none">
             <span class="mb-3 mb-md-0">© 2024 Urban Odyssey, Inc</span>
         </a>
+    </div>
+    <div class="col-md-3 d-flex flex-column align-items-end mx-3">
+        <a href="{% url 'contact:contact_us' %}" class="text-white text-decoration-none">Contact Us</a>
     </div>
 </footer>
