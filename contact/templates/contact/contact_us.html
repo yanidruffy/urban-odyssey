@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8">
+			<div class="card p-4 shadow-sm">
+				<div class="card-body">
+					<h4 class="mb-4">Contact Us</h4>
+					<form method="post">
+						{% csrf_token %}
+						{{ contact_form|crispy }}
+						<button type="submit" class="text-uppercase btn btn-dark btn-md">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
