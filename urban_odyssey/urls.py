@@ -28,5 +28,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls', namespace='profiles')),
     path('wishlist/', include('wishlist.urls', namespace='wishlist')),
 	path('contact/', include('contact.urls', namespace='contact')),
+	path('about/', include('about.urls', namespace='about')),
     path('', include('home.urls', namespace='home')),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
