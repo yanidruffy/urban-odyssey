@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'profiles.apps.ProfilesConfig',
     'wishlist.apps.WishlistConfig',
     'contact.apps.ContactConfig',
+    'about.apps.AboutConfig',
 
     # Other
     'crispy_forms',
