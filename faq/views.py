@@ -24,6 +24,45 @@ def add_faq(request):
 			faq_form.save()
 			messages.success(request, "FAQ added successfully.")
 			return redirect('faq:faq_list')
+		else:
+			messages.error(request, "Sorry, you are not authorised.")
 	else:
 		faq_form = FaqForm()
 	return render(request, 'faq/add_faq.html', {'faq_form': faq_form})
+
+@login_required
+def edit_faq(request, id):
+	"""View to edit a FAQ"""
+	faq = get_object_or_404(Faq, id=id)
+	if not request.user.is_superuser:
+		messages.error(request, "You do not have permission to edit this FAQ.")
+		return redirect('faq:faq_list')
+
+	if request.method == 'POST':
+		faq_form = FaqForm(request.POST, instance=faq)
+		if faq_form.is_valid():
+			faq_form.save()
+			messages.success(request, "FAQ updated successfully!")
+			return redirect('faq:faq_list')
+		else:
+			messages.error(request, "Something went wrong. Editing FAQ failed.")
+	else:
+		faq_form = FaqForm(instance=faq)
+		messages.info(request, f'You are editing {faq.question}')
+
+	return render(request, 'faq/edit_faq.html', {'faq_form': faq_form})
+
+@login_required
+def delete_faq(request, id):
+	"""View to delete a FAQ"""
+	faq = get_object_or_404(Faq, id=id)
+	if not request.user.is_superuser:
+		messages.error(request, "You do not have permission to delete this FAQ.")
+		return redirect('faq:faq_list')
+
+	if request.method == 'POST':
+		faq.delete()
+		messages.success(request, "FAQ deleted successfully!")
+		return redirect('faq:faq_list')
+
+	return render(request, 'faq/confirm_delete_faq.html', {'faq': faq})

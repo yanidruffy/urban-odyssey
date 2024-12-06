@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8">
+			<div class="card p-4 shadow-sm">
+				<div class="card-body">
+					<h4 class="text-uppercase mb-4">Edit FAQ</h4>
+					<form method="post">
+						{% csrf_token %}
+						{{ faq_form|crispy }}
+						<div class="d-flex justify-content-start mt-4">
+							<a href="{% url 'faq:faq_list' %}" class="text-uppercase btn btn-outline-dark">
+								<i class="fas fa-chevron-left"></i> Back to FAQ List
+							</a>
+							<button type="submit" class="text-uppercase btn btn-dark btn-md mx-1">
+								Save Changes <i class="fas fa-save"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

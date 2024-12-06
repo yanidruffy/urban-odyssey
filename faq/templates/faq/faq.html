@@ -18,8 +18,8 @@
 									<p>{{ faq.answer }}</p>
 									{% if request.user.is_superuser %}
 										<small class="ml-3">
-											<a href="">Edit</a> |
-											<a class="text-danger" href="">Delete</a>
+											<a href="{% url 'faq:edit_faq' faq.id %}">Edit</a> |
+											<a class="text-danger" href="{% url 'faq:delete_faq' faq.id %}">Delete</a>
 										</small>
 									{% endif %}
 								</div>

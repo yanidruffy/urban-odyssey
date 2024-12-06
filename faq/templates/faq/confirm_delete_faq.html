@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card p-4 shadow-sm">
+                <div class="card-body text-center">
+                    <h4 class="text-danger">Confirm FAQ Deletion</h4>
+                    <p>Are you sure you want to delete the following FAQ?</p>
+                    <div class="mb-3">
+                        <h5 class="fw-bold">Question:</h5>
+                        <p>{{ faq.question }}</p>
+                        <h5 class="fw-bold">Answer:</h5>
+                        <p>{{ faq.answer }}</p>
+                    </div>
+                    <form method="POST" action="{% url 'faq:delete_faq' faq.id %}">
+                        {% csrf_token %}
+                        <a href="{% url 'faq:faq_list' %}" class="btn btn-outline-dark btn-md">Cancel</a>
+                        <button type="submit" class="btn btn-danger">Confirm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
