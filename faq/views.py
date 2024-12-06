@@ -8,7 +8,10 @@ from .forms import FaqForm
 
 def faq_list(request):
 	"""View for the FAQ page"""
-	faqs = Faq.objects.filter(published=True).order_by('-created')
+	if request.user.is_superuser:
+		faqs = Faq.objects.all().order_by('-created')
+	else:
+		faqs = Faq.objects.filter(published=True).order_by('-created')
 	return render(request, 'faq/faq.html', {'faqs': faqs})
 
 @login_required

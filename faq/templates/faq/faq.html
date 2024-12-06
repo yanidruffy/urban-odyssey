@@ -20,6 +20,11 @@
 										<small class="ml-3">
 											<a href="{% url 'faq:edit_faq' faq.id %}">Edit</a> |
 											<a class="text-danger" href="{% url 'faq:delete_faq' faq.id %}">Delete</a>
+											{% if faq.published %}
+												<span class="badge bg-dark text-white">Published</span>
+											{% else %}
+												<span class="badge bg-warning text-dark">Not published</span>
+											{% endif %}
 										</small>
 									{% endif %}
 								</div>
