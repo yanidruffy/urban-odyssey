@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}- FAQs{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8">
+			<div class="card p-4 shadow-sm">
+				<div class="card-body">
+					<h4 class="text-uppercase mb-4 text-center">Frequently Asked Questions</h4>
+
+					{% if faqs %}
+						<div class="list-group">
+							{% for faq in faqs %}
+								<div class="list-group-item border-0">
+									<h5 class="fw-bold">{{ faq.question }}</h5>
+									<p>{{ faq.answer }}</p>
+								</div>
+							{% endfor %}
+						</div>
+					{% else %}
+						<p class="text-muted">No FAQs available at the moment.</p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

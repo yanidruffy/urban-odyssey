@@ -82,15 +82,23 @@
   </div>
 </div>
 <div class="my-5 mt-0 mb-0">
-  <div class="p-5 text-center bg-body-tertiary">
-    <div class="container py-5">
-      <h2 class="text-body-emphasis">Placeholder</h2>
-      <p class="col-lg-8 mx-auto lead">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
-    </div>
-  </div>
+	<div class="p-5 text-center bg-body-tertiary">
+		<div class="container py-5">
+			<h2 class="text-body-emphasis text-uppercase">Frequently Asked Questions</h2>
+			{% if faqs %}
+				<div class="list-group">
+				{% for faq in faqs %}
+					<div class="list-group-item border-0 bg-body-tertiary">
+						<h5 class="fw-bold">{{ faq.question }}</h5>
+						<p>{{ faq.answer }}</p>
+					</div>
+				{% endfor %}
+				<a href="{% url 'faq:faq_list' %}" class="btn btn-dark btn-md">View All FAQs</a>
+				</div>
+			{% else %}
+				<p class="text-muted">No FAQs available at the moment.</p>
+			{% endif %}
+		</div>
+	</div>
 </div>
 {% endblock %}
