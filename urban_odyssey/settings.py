@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 if os.path.exists("env.py"):
     import env
@@ -27,11 +28,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fre)sls2k#)zxup26qhvagcbo0-xa-_w#(x6(g(p*5o+g1bbk_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-yanidruffy-urbanodyssey-fsbz4jb5ydb.ws.codeinstitute-ide.net',]
+ALLOWED_HOSTS = [
+	'8000-yanidruffy-urbanodyssey-fsbz4jb5ydb.ws.codeinstitute-ide.net',
+	'urban-odyssey-d9c0f3df42fe.herokuapp.com',
+]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-yanidruffy-urbanodyssey-fsbz4jb5ydb.ws.codeinstitute-ide.net',]
+CSRF_TRUSTED_ORIGINS = [
+	'https://8000-yanidruffy-urbanodyssey-fsbz4jb5ydb.ws.codeinstitute-ide.net',
+	'https://urban-odyssey-d9c0f3df42fe.herokuapp.com',
+]
 
 # Application definition
 
@@ -124,12 +131,17 @@ WSGI_APPLICATION = 'urban_odyssey.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+if 'DATABASE_URL' in os.environ:
+	DATABASES = {
+		'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+	}
+else:
+	DATABASES = {
+		'default': {
+			'ENGINE': 'django.db.backends.sqlite3',
+			'NAME': BASE_DIR / 'db.sqlite3',
+		}
+	}
 
 
 # Password validation
