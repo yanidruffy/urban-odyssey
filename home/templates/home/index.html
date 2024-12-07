@@ -64,16 +64,30 @@
   </div>
 </div>
 <div class="my-5 mt-0 mb-0 bg-dark text-white">
-  <div class="p-5 text-center">
-    <div class="container py-5">
-      <h2 class="text-white">Bestseller</h2>
-      <p class="col-lg-8 mx-auto lead">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-      </p>
-    </div>
-  </div>
+	<div class="p-5 text-center">
+		<div class="container py-5">
+			<h2 class="text-white">Our Top-Rated Products</h2>
+			<div class="row">
+				{% for product in top_products %}
+				<div class="col-md-4 mb-4">
+					<div class="card h-100 shadow-sm mt-4">
+						{% if product.image %}
+							<img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+						{% else %}
+							<img src="{% static 'images/no_image.png' %}" class="card-img-top" alt="No Image">
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title">{{ product.name }}</h5>
+							<p class="card-text text-muted">Rating: {{ product.rating|default:"N/A" }}</p>
+							<p class="card-text">Price: ${{ product.price }}</p>
+							<a href="{{ product.get_absolute_url }}" class="btn btn-dark">View Product</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 </div>
 <div class="my-5 mt-0 mb-0">
 	<div class="p-5 text-center bg-body-tertiary">
