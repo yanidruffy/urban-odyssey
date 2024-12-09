@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    /* 
+    /*
      * Disable +/- buttons outside 1-99 range
      */
     function handleEnableDisable(itemId) {
@@ -30,9 +30,11 @@
         var itemId = $(this).data('item_id');
         var currentValue = parseInt($(this).val());
 
-        if (1 < currentValue > 99) {
-            $(this).val(99);
-        }
+        if (currentValue < 1) {
+			$(this).val(1);
+		} else if (currentValue > 99) {
+			$(this).val(99);
+		}
         handleEnableDisable(itemId);
     });
 
