@@ -37,6 +37,7 @@ footer {
 }
 
 .custom-toast {
+	margin-top: 3rem;
     width: 100%;
     max-width: 100%;
 }

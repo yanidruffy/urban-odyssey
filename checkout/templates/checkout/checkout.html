@@ -30,7 +30,7 @@
                     <p class="mb-1 mt-0 small text-muted">Item</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <p class="mb-1 mt-0 small text-muted text-end">Subtotal</p>
                 </div>
             </div>
             {% for item in bag_items %}
@@ -48,19 +48,19 @@
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                         <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
                     </div>
-                    <div class="col-3 text-right">
+                    <div class="col-3 text-end">
                         <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
             {% endfor %}
             <hr class="my-2">
-            <div class="row text-black text-right">
-                <div class="col-7 offset-2">
+            <div class="row text-black">
+                <div class="col-7 offset-2 text-start">
                     <p class="my-0">Order Total:</p>
                     <p class="my-0">Delivery:</p>
                     <p class="my-0">Grand Total:</p>
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                     <p class="my-0">${{ total | floatformat:2 }}</p>
                     <p class="my-0">${{ delivery | floatformat:2 }}</p>
                     <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
@@ -73,14 +73,14 @@
             <p class="text-muted">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout:checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
-                
+
                 <!-- Order Details -->
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                     {{ order_form.full_name|as_crispy_field }}
                     {{ order_form.email|as_crispy_field }}
                 </fieldset>
-                
+
                 <!-- Delivery Details -->
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
@@ -97,7 +97,7 @@
                             <input class="form-check-input" type="checkbox" id="id-save-info" name="save-info" checked>
                         {% else %}
                             <label class="form-check-label" for="id-save-info">
-                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
                                 <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
                             </label>
                         {% endif %}
@@ -113,7 +113,7 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </div>
                 </fieldset>
-                
+
                 <!-- Submit Button -->
                 <div class="submit-button text-end mt-5 mb-2">
                     <a href="{% url 'bag:view_bag' %}" class="btn btn-outline-dark btn-md">
@@ -134,7 +134,7 @@
                         </span>
                         <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
                     </p>
-                </div>                
+                </div>
             </form>
         </div>
     </div>
