@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://urban-odyssey-d9c0f3df42fe.herokuapp.com/sitemap.xml
