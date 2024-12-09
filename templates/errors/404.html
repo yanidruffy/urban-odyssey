@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card p-4 shadow-sm">
+                <div class="card-body text-center">
+                    <h4 class="text-danger">404 - Page not found</h4>
+                    <p>Sorry, the page you're looking for does not exist.</p>
+                    <a href="{% url 'home:home' %}" class="btn btn-outline-dark btn-md text-uppercase">Back to homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

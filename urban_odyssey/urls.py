@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from urban_odyssey import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,3 +33,6 @@ urlpatterns = [
 	path('faq/', include('faq.urls', namespace='faq')),
     path('', include('home.urls', namespace='home')),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'urban_odyssey.views.handler404'
+handler500 = 'urban_odyssey.views.handler500'
