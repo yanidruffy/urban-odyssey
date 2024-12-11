@@ -23,6 +23,80 @@ This project was developed as part of Code Institute's Full Stack Software Devel
 
 ## Design Choices
 
+### Wireframes
+
+I created wireframes for the key page sites using [Balsamiq](https://balsamiq.com/). The purpose was to outline the basic structure and layout of the website.
+
+<details>
+<summary><strong>Homepage</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-homepage.png)
+
+</details>
+
+<details>
+<summary><strong>Product List</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-product-list.png)
+
+</details>
+
+<details>
+<summary><strong>Product Detail</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-product-detail.png)
+
+</details>
+
+<details>
+<summary><strong>Shopping Bag</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-bag.png)
+
+</details>
+
+<details>
+<summary><strong>Checkout</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-checkout.png)
+
+</details>
+
+<details>
+<summary><strong>Profile</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-profile.png)
+
+</details>
+
+<details>
+<summary><strong>Wishlist</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-wishlist.png)
+
+</details>
+
+<details>
+<summary><strong>FAQ</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-faq.png)
+
+</details>
+
+<details>
+<summary><strong>About</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-about.png)
+
+</details>
+
+<details>
+<summary><strong>Contact Us</strong></summary>
+
+![Home Page Wireframe](./docs/readme_images/wireframes-contact.png)
+
+</details>
+
 ### Color Scheme
 
 To maintain simplicity and a minimalist aesthetic, he primary color scheme for the site is black and white. I also used Bootstrap’s default colors to maintain consistency with the design patterns. These colors help to create a clean interface and incorporating an urban vibe.
