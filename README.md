@@ -172,6 +172,196 @@ These strategies and future plans are designed to attract and retain customers w
 
 [Back to Top](#top)
 
+## Features
+
+### Homepage
+- **Header & Navigation**:
+	- **Hamburger Menu**: A collapsible menu on mobile devices that provides easy access to all sections of the site, including products, wishlist, and contact.
+	- **Search Bar**: Users can search for products directly from the mobile header.
+	- **Sticky Header**: The header remains visible while scrolling on mobile devices, allowing quick access to navigation options.
+	- **Quick Access**: Provides links to key sections of the website including the homepage, product categories, shopping bag, and user account.
+	- **User Authentication**: Displays login and account creation options for registered users.
+- **Dynamic Carousel**: Displays a carousel with images of different backpack brands (TomToc, Aer, Peak Design) and links to their respective product category pages.
+- **Company Information**: Includes company statements that highlight the mission and vision of Urban Odyssey.
+- **Top-Rated Products**: Displays top-rated products, helping users easily find popular items.
+- **FAQ Section**: A few FAQs are displayed directly on the homepage for easy access to common queries.
+- **Footer**:
+	- **Newsletter Signup**: Users can subscribe to the newsletter.
+	- **Social Media Icons**: Displays icons that link to the company’s social media profiles.
+	- **Site Links**: Provides links to important sections of the website.
+
+<details>
+<summary><strong>Homepage Screenshot</strong></summary>
+
+![Homepage Screenshot](./docs/readme_images/homepage-screenshot.png)
+
+</details>
+
+### Product List
+- **Product Categories**: Displays products from Aer, Peak Design, and tomtoc, when it is available.
+- **Product Details**: Each product includes an image, product name, prices, and ratings, helping users make informed decisions.
+- **Category Navigation**: Users can browse products by different categories such as backpacks, accessories, and other product types.
+- **Admin Control**: Superusers see Edit and Delete buttons for each product, enabling quick management directly from the product list view.
+
+<details>
+<summary><strong>Product List Screenshot</strong></summary>
+
+![Product List Screenshot](./docs/readme_images/product-list-screenshot.png)
+
+</details>
+
+### Product Detail
+- **Comprehensive Product View**: Users can explore large, high-quality images alongside detailed descriptions and specifications for each product.
+- **Product Rating**: Displays the overall rating, giving users insights into product popularity and quality.
+- **Wishlist Integration**: Logged-in users can save products to their wishlist for future consideration.
+- **Seamless Purchase Options**: Enables users to select quantities and add items directly to their shopping bag.
+- **Admin Control**: Superusers see Edit and Delete buttons for each product, enabling quick management directly from the product list view.
+
+<details>
+<summary><strong>Product Detail Screenshot</strong></summary>
+
+![Product Detail Screenshot](./docs/readme_images/product-detail-screenshot.png)
+
+</details>
+
+### Shopping Bag
+- **Item Management**: Users can add items to the bag, view item details (images, descriptions, prices), and adjust quantities.
+- **Remove Items**: Users can remove items from the bag if they decide not to purchase them.
+- **Order Summary**: A summary of the order, including subtotal, shipping costs, taxes, and the total cost, is displayed.
+
+<details>
+<summary><strong>Shopping bag Screenshot</strong></summary>
+
+![Shopping bag Screenshot](./docs/readme_images/shopping-bag-screenshot.png)
+
+</details>
+
+### Checkout
+- **Secure Payments**: Users can make payments via **Stripe**, a secure and trusted payment gateway.
+- **Order Confirmation**: Displays the order summary and delivery details before finalizing the purchase.
+- **Delivery Information**: Users can enter and save delivery details if logged in for a quicker checkout experience.
+- **Guest Checkout**: Allows users to complete their purchase without needing to create an account.
+
+<details>
+<summary><strong>Checkout Screenshot</strong></summary>
+
+![Checkout Screenshot](./docs/readme_images/checkout-screenshot.png)
+
+</details>
+
+### Checkout Success
+- **Order Confirmation**: Displays a confirmation message thanking users for their order, along with a confirmation email sent to their provided address.
+- **Order Summary**: Provides a detailed summary of the order, including item names, quantities, individual prices, subtotal, delivery cost, and grand total.
+- **Delivery Address**: Displays the delivery address users provided during checkout.
+- **Confirmation Number**: Highlights a unique confirmation number for the order, which users can reference for tracking or inquiries.
+- **Navigation Options**:
+	- If users come from their profile, they can return to the profile page.
+	- Alternatively, users can navigate to the product list to continue shopping.
+
+<details>
+<summary><strong>Checkout Success Screenshot</strong></summary>
+
+![Checkout Success Screenshot](./docs/readme_images/checkout-success-screenshot.png)
+
+</details>
+
+## 5. User Profiles
+- **Profile Management**: Users can view and update their delivery information.
+- **Save Delivery Information**: Users have the option to save their delivery details for future orders.
+
+<details>
+<summary><strong>User Profile Screenshot</strong></summary>
+
+![User Profile Screenshot](./docs/readme_images/user-profile-screenshot.png)
+
+</details>
+
+### Wishlist
+- **Save Favorites**: Registered users can add products to their wishlist to keep track of items they may want to purchase later.
+- **Easy Access**: Users can view, or remove items from their wishlist directly.
+
+<details>
+<summary><strong>Wishlist Screenshot</strong></summary>
+
+![Wishlist Screenshot](./docs/readme_images/wishlist-screenshot.png)
+
+</details>
+
+### FAQ Section
+- **Comprehensive FAQ**: Users can find answers to common questions about the platform, shipping, returns, and more.
+- **Admin Management**: Admins can add, edit, or delete FAQs via the admin interface to keep content up-to-date.
+
+<details>
+<summary><strong>FAQ Screenshot</strong></summary>
+
+![FAQ Screenshot](./docs/readme_images/faq-screenshot.png)
+
+</details>
+
+### About Us
+- **Company Overview**: Displays information about the company’s history, mission, and vision.
+- **Contact Link**: A button allowing users to easily navigate to the Contact Us page for further inquiries.
+
+<details>
+<summary><strong>About Us Screenshot</strong></summary>
+
+![About Us Screenshot](./docs/readme_images/about-us-screenshot.png)
+
+</details>
+
+### Contact Us
+- **Contact Form**: Users can fill out a form to contact Urban Odyssey for support or inquiries.
+- **Message Management**: Admins can view, mark as read, and manage submitted messages via the Django admin interface.
+
+<details>
+<summary><strong>Contact Us Screenshot</strong></summary>
+
+![Contact Us Screenshot](./docs/readme_images/contact-us-screenshot.png)
+
+</details>
+
+### Toast Notifications
+- **Real-Time Feedback**: Toast messages provide users with instant feedback on their actions, such as adding items to the cart or encountering errors.
+
+<details>
+<summary><strong>Toast Notification Screenshot</strong></summary>
+
+![Toast Notification Screenshot](./docs/readme_images/toast-notification-screenshot.png)
+
+</details>
+
+## 9. Error Handling
+- **Custom Error Pages**: Custom 404 and 500 error pages to ensure a user-friendly experience in case of missing pages or server errors.
+
+<details>
+<summary><strong>404 Screenshot</strong></summary>
+
+![404 Screenshot](./docs/readme_images/404-screenshot.png)
+
+</details>
+
+## Authentication
+- **User Registration & Login**: Secure user authentication with registration, login, and password recovery features through Allauth.
+
+<details>
+<summary><strong>Password Reset Screenshot</strong></summary>
+
+![Password Reset Screenshot](./docs/readme_images/password-reset-screenshot.png)
+
+</details>
+
+### Admin Panel
+- **Comprehensive Management**: The Django Admin Panel allows superusers to efficiently manage various aspects of the website.
+
+<details>
+<summary><strong>Admin Panel Screenshot</strong></summary>
+
+![Admin Panel Screenshot](./docs/readme_images/admin-panel-screenshot.png)
+
+</details>
+
+[Back to Top](#top)
+
 ## Deployment
 
 ### Preparing for Deployment
