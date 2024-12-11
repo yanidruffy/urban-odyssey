@@ -62,13 +62,13 @@ To engage with potential customers and drive sales, Urban Odyssey uses the follo
 - Detailed product descriptions and **meta tags** to rank higher on search engines.
 - **XML Sitemap** and **robots.txt** files included to ensure search engines can efficiently crawl and index the site.
 
-2. **Social Media Marketing via Facebook**:
+2. **Social Media Marketing via Facebook**:<br>
 A **Facebook page** that helps with engaging with the customers, sharing updates, showcasing products, and running targeted ad campaigns.
 
-3. **Email Marketing Campaigns**:
+3. **Email Marketing Campaigns**:<br>
 Through [Brevo](https://app.brevo.com/), I designed email newsletter subscription, which will play a major role in future marketing plans.
 
-4. **Web Design**:
+4. **Web Design**:<br>
 The minimalist and stylish website design ensures a user-friendly shopping experience, appealing directly to the aesthetics and preferences of the target audience.
 
 ### Future Marketing Plans:
@@ -92,48 +92,49 @@ These strategies and future plans are designed to attract and retain customers w
 
 Before deploying to Heroku, ensure the following steps are completed:
 
-1. **Clone the Repository**:
-Clone the project repository to your local machine:
+1. **Clone the Repository**:<br>
+Clone the project repository to your local machine:<br>
 ```git clone https://github.com/yanidruffy/urban-odyssey.git```
 
-2. **Go to Project Directory**:
+2. **Go to Project Directory**:<br>
 ```cd urban-odyssey```
 
-3. **Set up Virtual Environment**:
-On MacOS/Linux:
-```python3 -m venv venv```
-```source venv/bin/activate```
-On Windows:
-```python -m venv venv```
+3. **Set up Virtual Environment**:<br>
+On MacOS/Linux:<br>
+```python3 -m venv venv```<br>
+```source venv/bin/activate```<br>
+
+On Windows:<br>
+```python -m venv venv```<br>
 ```venv\Scripts\activate```
 
-4. **Install Dependencies**:
-Install the necessary packages from the requirements.txt file:
+4. **Install Dependencies**:<br>
+Install the necessary packages from the requirements.txt file:<br>
 ```pip install -r requirements.txt```
 
-5. **Configure Environment Variables (local Deployment)**:
+5. **Configure Environment Variables (local Deployment)**:<br>
 Create a .env file in the project root and add the required variables for this project:
 
-# Example of setting environment variables
-```import os```
-```os.environ['DEVELOPMENT'] = 'True' or 'False'```
-```os.environ['SECRET_KEY'] = '<your-django-secret-key>'```
-```os.environ['DATABASE_URL'] = '<your-database-url>'```
-```os.environ['STRIPE_SECRET_KEY'] = '<your-stripe-secret-key>'```
-```os.environ['STRIPE_PUBLIC_KEY'] = '<your-stripe-public-key>'```
-```os.environ['STRIPE_WH_SECRET'] = '<your-stripe-webhook-secret>'```
-```os.environ['EMAIL_HOST_PASS'] = '<your-email-host-password>'```
-```os.environ['EMAIL_HOST_USER'] = '<your-email-host-username>'```
-```os.environ['AWS_ACCESS_KEY'] = '<your-aws-access-key>'```
-```os.environ['AWS_SECRET_ACCESS_KEY'] = '<your-aws-secret-access-key>'```
+Example of setting environment variables:<br>
+```import os```<br>
+```os.environ['DEVELOPMENT'] = 'True' or 'False'```<br>
+```os.environ['SECRET_KEY'] = '<your-django-secret-key>'```<br>
+```os.environ['DATABASE_URL'] = '<your-database-url>'```<br>
+```os.environ['STRIPE_SECRET_KEY'] = '<your-stripe-secret-key>'```<br>
+```os.environ['STRIPE_PUBLIC_KEY'] = '<your-stripe-public-key>'```<br>
+```os.environ['STRIPE_WH_SECRET'] = '<your-stripe-webhook-secret>'```<br>
+```os.environ['EMAIL_HOST_PASS'] = '<your-email-host-password>'```<br>
+```os.environ['EMAIL_HOST_USER'] = '<your-email-host-username>'```<br>
+```os.environ['AWS_ACCESS_KEY'] = '<your-aws-access-key>'```<br>
+```os.environ['AWS_SECRET_ACCESS_KEY'] = '<your-aws-secret-access-key>'```<br>
 ```os.environ['USE_AWS'] = 'True' or 'False'```
 
 Make sure to replace the placeholders with your actual values.
 
-6. **Run Database Migration**:
+6. **Run Database Migration**:<br>
 ```python manage.py migrate```
 
-7. **Test Locally**:
+7. **Test Locally**:<br>
 ```python manage.py runserver```
 Open a browser and visit the page. Check for DEBUG settings (DEVELOPMENT in env.py).
 
