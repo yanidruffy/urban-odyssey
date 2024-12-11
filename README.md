@@ -30,70 +30,81 @@ I created wireframes for the key page sites using [Balsamiq](https://balsamiq.co
 <details>
 <summary><strong>Homepage</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-homepage.png)
+![Homepage Wireframe](./docs/readme_images/wireframes-homepage.png)
 
 </details>
 
 <details>
 <summary><strong>Product List</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-product-list.png)
+![Product List Wireframe](./docs/readme_images/wireframes-product-list.png)
 
 </details>
 
 <details>
 <summary><strong>Product Detail</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-product-detail.png)
+![Product Detail Wireframe](./docs/readme_images/wireframes-product-detail.png)
 
 </details>
 
 <details>
 <summary><strong>Shopping Bag</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-bag.png)
+![Shopping Bag Wireframe](./docs/readme_images/wireframes-bag.png)
 
 </details>
 
 <details>
 <summary><strong>Checkout</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-checkout.png)
+![Checkout Wireframe](./docs/readme_images/wireframes-checkout.png)
 
 </details>
 
 <details>
 <summary><strong>Profile</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-profile.png)
+![Profile Wireframe](./docs/readme_images/wireframes-profile.png)
 
 </details>
 
 <details>
 <summary><strong>Wishlist</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-wishlist.png)
+![Wishlist Wireframe](./docs/readme_images/wireframes-wishlist.png)
 
 </details>
 
 <details>
 <summary><strong>FAQ</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-faq.png)
+![FAQ Wireframe](./docs/readme_images/wireframes-faq.png)
 
 </details>
 
 <details>
 <summary><strong>About</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-about.png)
+![About Wireframe](./docs/readme_images/wireframes-about.png)
 
 </details>
 
 <details>
 <summary><strong>Contact Us</strong></summary>
 
-![Home Page Wireframe](./docs/readme_images/wireframes-contact.png)
+![Contact Wireframe](./docs/readme_images/wireframes-contact.png)
+
+</details>
+
+### Database Design: Entity-Relationship Diagram (ERD)
+
+The ERD below reflects the current state of the project. It shows the relationships between different entities in the Urban Odyssey system.
+
+<details>
+<summary><strong>Contact Us</strong></summary>
+
+![ERD Wireframe](./docs/readme_images/erd.png)
 
 </details>
 
@@ -135,6 +146,7 @@ To engage with potential customers and drive sales, Urban Odyssey uses the follo
 - Optimized content with targeted keywords to improve search visibility, using [Wortracker](https://www.wordtracker.com/).
 - Detailed product descriptions and **meta tags** to rank higher on search engines.
 - **XML Sitemap** and **robots.txt** files included to ensure search engines can efficiently crawl and index the site.
+- Utilization of **slugs** in models to generate clean, descriptive and SEO-friendly URLs.
 
 2. **Social Media Marketing via Facebook**:<br>
 A **Facebook page** that helps with engaging with the customers, sharing updates, showcasing products, and running targeted ad campaigns.
