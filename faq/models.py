@@ -1,18 +1,17 @@
 from django.db import models
 
-# Create your models here.
 
 class Faq(models.Model):
-	question = models.CharField(max_length=200)
-	answer = models.TextField()
-	created = models.DateTimeField(auto_now_add=True)
-	updated = models.DateTimeField(auto_now=True)
-	published = models.BooleanField(default=True)
+    question = models.CharField(max_length=200)
+    answer = models.TextField()
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    published = models.BooleanField(default=True)
 
-	class Meta:
-		verbose_name = 'FAQ'
-		verbose_name_plural = 'FAQs'
-		ordering = ['question']
+    class Meta:
+        verbose_name = "FAQ"
+        verbose_name_plural = "FAQs"
+        ordering = ["question"]
 
-	def __str__(self):
-		return self.question
+    def __str__(self):
+        return self.question

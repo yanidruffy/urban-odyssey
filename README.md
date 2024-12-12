@@ -421,8 +421,6 @@ HTML files have been validated using [W3C Markup Validation Service](https://val
 
 </details>
 
-[Back to Top](#top)
-
 #### CSS Validation
 
 CSS files have been validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
@@ -454,6 +452,23 @@ Script tags were removed before testing to focus solely on the JavaScript code.
 ![Update Remove Script Screenshot](./docs/testing_images/js-update-remove-script.png)
 
 </details>
+
+#### Python Validation
+
+All altered Python files have been checked with **flake8** and validated using [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+<details>
+<summary><strong>PEP8 Results</strong></summary>
+
+All files came back with a Result of: All clear, no errors found
+
+![Wishlist Views Validation](./docs/testing_images/pep8/wishlist-views-validation.png)
+
+The screenshots for the other validated files can be found in the [PEP8 Folder](./docs/testing_images/pep8/)
+
+</details>
+
+[Back to Top](#top)
 
 ## Deployment
 
