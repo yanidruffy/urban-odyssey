@@ -110,7 +110,7 @@ The ERD below reflects the current state of the project. It shows the relationsh
 
 ### Color Scheme
 
-To maintain simplicity and a minimalist aesthetic, he primary color scheme for the site is black and white. I also used Bootstrap’s default colors to maintain consistency with the design patterns. These colors help to create a clean interface and incorporating an urban vibe.
+To maintain simplicity and a minimalist aesthetic, the primary color scheme for the site is black and white. I also used Bootstrap’s default colors to maintain consistency with the design patterns. These colors help to create a clean interface and incorporating an urban vibe.
 
 <details>
 <summary><strong>Color Palette</strong></summary>
@@ -265,7 +265,7 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
-## 5. User Profiles
+## User Profiles
 - **Profile Management**: Users can view and update their delivery information.
 - **Save Delivery Information**: Users have the option to save their delivery details for future orders.
 
@@ -330,7 +330,7 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
-## 9. Error Handling
+## Error Handling
 - **Custom Error Pages**: Custom 404 and 500 error pages to ensure a user-friendly experience in case of missing pages or server errors.
 
 <details>
@@ -361,6 +361,42 @@ These strategies and future plans are designed to attract and retain customers w
 </details>
 
 [Back to Top](#top)
+
+## Testing
+
+### Validation
+
+#### CSS Validation
+
+CSS files have been validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+<details>
+<summary><strong>CSS Validation Results</strong></summary>
+
+![CSS Validation Screenshot](./docs/testing_images/css-validation.png)
+
+| CSS File  | Errors | Warnings |
+|-----------|--------|----------|
+| base      | 0      | 2        |
+| checkout  | 0      | 1        |
+
+</details>
+
+#### Javascript Code Analyzer
+
+JS files have been analyzed using [JS Hint](https://jshint.com/)<br>
+Script tags were removed before testing to focus solely on the JavaScript code.
+
+<details>
+<summary><strong>JS Hint Results</strong></summary>
+
+![Newsletter Script Screenshot](./docs/testing_images/js-newsletter-script.png)
+![Stripe Elements Screenshot](./docs/testing_images/js-stripe-elements.png)
+![Toast Script Screenshot](./docs/testing_images/js-toast-script.png)
+![Quantity Input Script Screenshot](./docs/testing_images/js-quantity-input-script.png)
+![Update Remove Script Screenshot](./docs/testing_images/js-update-remove-script.png)
+
+</details>
 
 ## Deployment
 
@@ -489,3 +525,5 @@ Ensure that each variable corresponds to a value defined in your project's setti
 ![Deployment Success Example](./docs/readme_images/deployment-success.png)
 
 </details>
+
+[Back to Top](#top)
