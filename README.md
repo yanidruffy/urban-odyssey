@@ -374,20 +374,20 @@ HTML files have been validated using [W3C Markup Validation Service](https://val
 |-----------------|--------|----------|------|
 | homepage        | 0      | 0        | 0    |
 | products        | 0      | 0        | 0    |
-| product detail  | 1      | 0        | 0    |
+| product detail  | 0      | 0        | 0    |
 | product add     | 0      | 0        | 1    |
 | product edit    | 0      | 0        | 1    |
 | product delete  | 0      | 0        | 1    |
 | bag             | 0      | 0        | 0    |
 | checkout        | 0      | 0        | 0    |
-| checkout success| 1      | 0        | 0    |
+| checkout success| 0      | 0        | 0    |
 | profile         | 0      | 0        | 1    |
 | wishlist        | 0      | 0        | 1    |
 | wishlist remove | 0      | 0        | 1    |
 | faq             | 0      | 0        | 0    |
-| faq add         | 0      | 0        | 0    |
-| faq edit        | 0      | 0        | 0    |
-| faq delete      | 0      | 0        | 0    |
+| faq add         | 0      | 0        | 1    |
+| faq edit        | 0      | 0        | 1    |
+| faq delete      | 0      | 0        | 1    |
 | about           | 0      | 0        | 0    |
 | contact         | 0      | 0        | 0    |
 | login           | 0      | 0        | 0    |
@@ -399,13 +399,20 @@ HTML files have been validated using [W3C Markup Validation Service](https://val
 
 ![Homepage Validation](./docs/testing_images/html-homepage-validation.png)
 ![Products Validation](./docs/testing_images/html-products-validation.png)
-
+![Product Detail Validation](./docs/testing_images/html-product-detail-validation.png)
+![Product Add Validation](./docs/testing_images/html-product-add-validation.png)
+![Product Edit Validation](./docs/testing_images/html-product-edit-validation.png)
+![Product Delete Validation](./docs/testing_images/html-product-delete-validation.png)
 ![Bag Validation](./docs/testing_images/html-bag-validation.png)
 ![Checkout Validation](./docs/testing_images/html-checkout-validation.png)
-
+![Checkout Success Validation](./docs/testing_images/html-checkout-success-validation.png)
 ![Profile Validation](./docs/testing_images/html-profile-validation.png)
 ![Wishlist Validation](./docs/testing_images/html-wishlist-validation.png)
+![Wishlist Remove Validation](./docs/testing_images/html-wishlist-remove-validation.png)
 ![FAQ Validation](./docs/testing_images/html-faq-validation.png)
+![FAQ Add Validation](./docs/testing_images/html-faq-add-validation.png)
+![FAQ Edit Validation](./docs/testing_images/html-faq-edit-validation.png)
+![FAQ Delete Validation](./docs/testing_images/html-faq-delete-validation.png)
 ![About Validation](./docs/testing_images/html-about-validation.png)
 ![Contact Validation](./docs/testing_images/html-contact-validation.png)
 ![Login Validation](./docs/testing_images/html-login-validation.png)
