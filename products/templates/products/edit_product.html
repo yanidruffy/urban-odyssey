@@ -14,7 +14,8 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-6 offset-lg-3">
-            <form method="POST" action="{% url 'products:edit_product' product.id %}" enctype="multipart/form-data" class="p-4 shadow-sm rounded">
+            <form method="POST" action="{% url 'products:edit_product' product.id %}" enctype="multipart/form-data"
+                class="p-4 shadow-sm rounded">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-start mt-4">

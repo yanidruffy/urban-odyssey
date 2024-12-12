@@ -1,6 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-         <li class="nav-item d-lg-none">
+        <li class="nav-item d-lg-none">
             <a class="text-uppercase fw-bold nav-link text-white" href="{% url 'home:home' %}">
                 Home
             </a>
@@ -11,17 +11,20 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="text-uppercase fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='aer' %}">
+            <a class="text-uppercase fw-bold nav-link text-white"
+                href="{% url 'products:category_product_list' category_slug='aer' %}">
                 Aer
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="text-uppercase fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='peak_design' %}">
+            <a class="text-uppercase fw-bold nav-link text-white"
+                href="{% url 'products:category_product_list' category_slug='peak_design' %}">
                 Peak Design
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="text-uppercase fw-bold nav-link text-white" href="{% url 'products:category_product_list' category_slug='tomtoc' %}">
+            <a class="text-uppercase fw-bold nav-link text-white"
+                href="{% url 'products:category_product_list' category_slug='tomtoc' %}">
                 tomtoc
             </a>
         </li>

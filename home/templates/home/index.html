@@ -4,73 +4,69 @@
 {% block content %}
 
 <div id="carousel-hero" class="carousel slide mb-6" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="1" aria-label="Slide 2"
-      aria-current="true"></button>
-    <button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{% static 'images/carousel-tom.webp' %}" width="100%" height="100%" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false" alt="tomtoc backpack TechPack-T73 X-Pac">
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-      <div class="container">
-        <div class="carousel-caption text-start">
-			<h2>tomtoc</h2>
-          	<p>
-				<a class="btn btn-lg btn-dark"
-					href="{% url 'products:category_product_list' category_slug='tomtoc' %}">Buy Now</a>
-			</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'images/carousel-aer.jpg' %}" width="100%" height="100%" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false" alt="aer backpack Travel Pack 3 X-Pac">
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-      <div class="container">
-        <div class="carousel-caption">
-			<h2>Aer</h2>
-			<p>
-				<a class="btn btn-lg btn-dark"
-					href="{% url 'products:category_product_list' category_slug='aer' %}">Buy Now</a>
-			</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'images/carousel-pd.webp' %}" width="100%" height="100%" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false" alt="Peak Design everyday backpack">
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-      <div class="container">
-		<div class="carousel-caption text-end">
-			<h2>Peak Design</h2>
-			<p>
-				<a class="btn btn-lg btn-dark"
-					href="{% url 'products:category_product_list' category_slug='peak_design' %}">Buy Now</a>
-			</p>
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="0" class="active"
+			aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="1" aria-label="Slide 2"
+			aria-current="true"></button>
+		<button type="button" data-bs-target="#carousel-hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="{% static 'images/carousel-tom.webp' %}" aria-hidden="true"
+				alt="tomtoc backpack TechPack-T73 X-Pac">
+			<div class="container">
+				<div class="carousel-caption text-start">
+					<h2>tomtoc</h2>
+					<p>
+						<a class="btn btn-lg btn-dark"
+							href="{% url 'products:category_product_list' category_slug='tomtoc' %}">Buy Now</a>
+					</p>
+				</div>
+			</div>
 		</div>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hero" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-hero" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+		<div class="carousel-item">
+			<img src="{% static 'images/carousel-aer.jpg' %}" aria-hidden="true" alt="Aer backpack Travel Pack 3 X-Pac">
+			<div class="container">
+				<div class="carousel-caption">
+					<h2>Aer</h2>
+					<p>
+						<a class="btn btn-lg btn-dark"
+							href="{% url 'products:category_product_list' category_slug='aer' %}">Buy Now</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="{% static 'images/carousel-pd.webp' %}" aria-hidden="true" alt="Peak Design everyday backpack">
+			<div class="container">
+				<div class="carousel-caption text-end">
+					<h2>Peak Design</h2>
+					<p>
+						<a class="btn btn-lg btn-dark"
+							href="{% url 'products:category_product_list' category_slug='peak_design' %}">Buy Now</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carousel-hero" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carousel-hero" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
 </div>
 <div class="my-5 mt-0 mb-0">
-  <div class="p-5 text-center">
-    <div class="container py-5">
-      <p class="col-lg-8 mx-auto lead">
-        {{ about.company_statement }}
-      </p>
-    </div>
-  </div>
+	<div class="p-5 text-center">
+		<div class="container py-5">
+			<p class="col-lg-8 mx-auto lead">
+				{{ about.company_statement }}
+			</p>
+		</div>
+	</div>
 </div>
 <div class="my-5 mt-0 mb-0 bg-dark text-white">
 	<div class="p-5 text-center">
@@ -81,9 +77,9 @@
 				<div class="col-md-4 mb-4">
 					<div class="card h-100 shadow-sm mt-4">
 						{% if product.image %}
-							<img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+						<img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
 						{% else %}
-							<img src="{% static 'images/no_image.png' %}" class="card-img-top" alt="No Image">
+						<img src="{% static 'images/no_image.png' %}" class="card-img-top" alt="No Image">
 						{% endif %}
 						<div class="card-body">
 							<h5 class="card-title">{{ product.name }}</h5>
@@ -103,17 +99,17 @@
 		<div class="container py-5">
 			<h2 class="text-body-emphasis text-uppercase">Frequently Asked Questions</h2>
 			{% if faqs %}
-				<div class="list-group">
+			<div class="list-group">
 				{% for faq in faqs %}
-					<div class="list-group-item border-0">
-						<h5 class="fw-bold">{{ faq.question }}</h5>
-						<p>{{ faq.answer }}</p>
-					</div>
+				<div class="list-group-item border-0">
+					<h5 class="fw-bold">{{ faq.question }}</h5>
+					<p>{{ faq.answer }}</p>
+				</div>
 				{% endfor %}
 				<a href="{% url 'faq:faq_list' %}" class="btn btn-dark btn-md">View All FAQs</a>
-				</div>
+			</div>
 			{% else %}
-				<p class="text-muted">No FAQs available at the moment.</p>
+			<p class="text-muted">No FAQs available at the moment.</p>
 			{% endif %}
 		</div>
 	</div>

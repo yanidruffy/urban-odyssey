@@ -41,10 +41,10 @@
                             <small class="text-muted">No Rating</small>
                             {% endif %}
                             {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'products:edit_product' product.id %}">Edit</a> | 
-                                    <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
-                                </small>
+                            <small class="ml-3">
+                                <a href="{% url 'products:edit_product' product.id %}">Edit</a> |
+                                <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
+                            </small>
                             {% endif %}
                         </div>
                     </div>
