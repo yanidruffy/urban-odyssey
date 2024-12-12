@@ -11,34 +11,34 @@
 				<div class="card-body">
 					<h4 class="text-uppercase mb-4 text-center">Frequently Asked Questions</h4>
 					{% if faqs %}
-						<div class="list-group">
-							{% for faq in faqs %}
-								<div class="list-group-item border-0">
-									<h5 class="fw-bold">{{ faq.question }}</h5>
-									<p>{{ faq.answer }}</p>
-									{% if request.user.is_superuser %}
-										<small class="ml-3">
-											<a href="{% url 'faq:edit_faq' faq.id %}">Edit</a> |
-											<a class="text-danger" href="{% url 'faq:delete_faq' faq.id %}">Delete</a>
-											{% if faq.published %}
-												<span class="badge bg-dark text-white">Published</span>
-											{% else %}
-												<span class="badge bg-warning text-dark">Not published</span>
-											{% endif %}
-										</small>
-									{% endif %}
-								</div>
-							{% endfor %}
+					<div class="list-group">
+						{% for faq in faqs %}
+						<div class="list-group-item border-0">
+							<h5 class="fw-bold">{{ faq.question }}</h5>
+							<p>{{ faq.answer }}</p>
+							{% if request.user.is_superuser %}
+							<small class="ml-3">
+								<a href="{% url 'faq:edit_faq' faq.id %}">Edit</a> |
+								<a class="text-danger" href="{% url 'faq:delete_faq' faq.id %}">Delete</a>
+								{% if faq.published %}
+								<span class="badge bg-dark text-white">Published</span>
+								{% else %}
+								<span class="badge bg-warning text-dark">Not published</span>
+								{% endif %}
+							</small>
+							{% endif %}
 						</div>
+						{% endfor %}
+					</div>
 					{% else %}
-						<p class="text-muted">No FAQs available at the moment.</p>
+					<p class="text-muted">No FAQs available at the moment.</p>
 					{% endif %}
 					{% if user.is_superuser %}
-						<div class="mx-3 mt-2">
-							<a href="{% url 'faq:add_faq' %}" class="btn btn-dark text-uppercase">
-								Add FAQ <i class="fas fa-plus-circle"></i>
-							</a>
-						</div>
+					<div class="mx-3 mt-2">
+						<a href="{% url 'faq:add_faq' %}" class="btn btn-dark text-uppercase">
+							Add FAQ <i class="fas fa-plus-circle"></i>
+						</a>
+					</div>
 					{% endif %}
 				</div>
 			</div>
