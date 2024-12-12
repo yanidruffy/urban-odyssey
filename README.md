@@ -151,8 +151,22 @@ To engage with potential customers and drive sales, Urban Odyssey uses the follo
 2. **Social Media Marketing via Facebook**:<br>
 A **Facebook page** that helps with engaging with the customers, sharing updates, showcasing products, and running targeted ad campaigns.
 
+<details>
+<summary><strong>Company Facebook Page</strong></summary>
+
+![Facebook Mockdraft](./docs/readme_images/urban-odyssey-facebook.png)
+
+</details>
+
 3. **Email Marketing Campaigns**:<br>
 Through [Brevo](https://app.brevo.com/), I designed email newsletter subscription, which will play a major role in future marketing plans.
+
+<details>
+<summary><strong>Newsletter List</strong></summary>
+
+![Brevo Screenshot](./docs/readme_images/brevo-newsletter-screenshot.png)
+
+</details>
 
 4. **Web Design**:<br>
 The minimalist and stylish website design ensures a user-friendly shopping experience, appealing directly to the aesthetics and preferences of the target audience.
@@ -773,3 +787,48 @@ Ensure that each variable corresponds to a value defined in your project's setti
 </details>
 
 [Back to Top](#top)
+
+### Technologies Used
+
+#### Libraries & Frameworks
+- **Django**: Backend framework for structuring the application.
+- **Python**: Programming language used for development.
+- **Bootstrap 5**: Frontend framework for responsive design.
+- **django-allauth**: Authentication and user management.
+- **django-storages**: Manages file storage with AWS S3.
+- **django-crispy-forms**: Enhances Django forms with Bootstrap 5.
+- **django-countries**: Adds country selection to forms.
+- **boto3**: AWS SDK for interacting with AWS services.
+- **Pillow**: Image processing library for handling images.
+- **Graphviz**: Creates visual diagrams and graphs.
+
+#### Payment & Cloud Services
+- **Stripe**: Payment processing service for transactions.
+- **AWS S3**: Cloud storage for files.
+- **Heroku**: Cloud platform for app deployment.
+
+#### Frontend Technologies
+- **HTML**: Markup language for structuring content.
+- **CSS**: Stylesheet language for web page design.
+- **JavaScript**: Interactivity and dynamic content.
+
+#### Other Tools & Integrations
+- **PostgreSQL**: Database for storing data.
+- **CodeInstitute IDE**: Online IDE using Gitpod.
+- **VS Code**: Editor for writing code.
+
+
+### **Credits**
+
+- **Aer, Peak Design, and tomtoc**: Brands featured in the product images. All used for learning purposes, no harm intended.
+- **Balsamiq**: Used for creating wireframes.
+- **Boutique Ado Project by Code Institute**: The foundation for this project, serving as a starting point for the development of Urban Odyssey.
+- **ChatGPT**: Used for content text, and debugging.
+- **Coolors**: Used for selecting color schemes for the project.
+- **DeepAI**: Used for generating AI-based images for my mockup Facebook page.
+- **Favicon**: Provided the favicon used in the project.
+- **Google Fonts**: Provided 'Montserrat' font used in the project.
+- **Heroku**: Cloud platform used for deploying the application.
+- **Brevo**: Email marketing service for campaigns.
+- **Temp-Mail**: Provided temporary email addresses for testing purposes.
+- **TinyPNG**: Optimized images for faster load times.
