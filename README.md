@@ -470,6 +470,62 @@ The screenshots for the other validated files can be found in the [PEP8 Folder](
 
 [Back to Top](#top)
 
+## Lighthouse
+
+The Lighthouse reports have been generated to audit the website for performance, accessibility, best practices, and SEO across various key pages.
+
+All images used in my website have been compressed using [TinyPNG](https://tinypng.com/).
+
+<details>
+<summary><strong>Lighthouse Results</strong></summary>
+
+Performance and Accessibility need some work, Best Practices and SEO scores are excellent.
+
+1. **Homepage**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-homepage-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-homepage-mobile.png)
+
+2. **Products**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-products-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-products-mobile.png)
+
+3. **Product Detail**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-product-detail-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-product-detail-mobile.png)
+
+4. **Profile**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-profile-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-profile-mobile.png)
+
+5. **Bag**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-bag-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-bag-mobile.png)
+
+6. **Checkout**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-checkout-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-checkout-mobile.png)
+
+7. **Wishlist**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-wishlist-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-wishlist-mobile.png)
+
+8. **FAQ**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-faq-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-faq-mobile.png)
+
+9. **About Us**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-about-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-about-mobile.png)
+
+10. **Contact Us**
+- Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-contact-desktop.png)
+- Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-contact-mobile.png)
+
+
+</details>
+
+[Back to Top](#top)
+
 ## Deployment
 
 ### Preparing for Deployment
