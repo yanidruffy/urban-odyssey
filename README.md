@@ -470,7 +470,7 @@ The screenshots for the other validated files can be found in the [PEP8 Folder](
 
 [Back to Top](#top)
 
-## Lighthouse
+### Lighthouse
 
 The Lighthouse reports have been generated to audit the website for performance, accessibility, best practices, and SEO across various key pages.
 
@@ -521,8 +521,126 @@ Performance and Accessibility need some work, Best Practices and SEO scores are 
 - Desktop: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-contact-desktop.png)
 - Mobile: ![Homepage Desktop Screenshot](./docs/testing_images/lighthouse/lighthouse-contact-mobile.png)
 
-
 </details>
+
+[Back to Top](#top)
+
+## Manual Testing
+
+### Home Page
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Header** | 1. Click logo to go to homepage.<br>2. Test search bar.<br>3. Click account icon. | Logo redirects correctly.<br>Search works.<br>Account options appear. | &check; |
+| **Carousel** | 1. Check if carousel shows all images automatically.<br>2. Test each link. | All images show.<br>Links work. | &check; |
+| **Company Statement** | 1. Verify the statement or placeholder is visible. | Statement is visible and matches the content. | &check; |
+| **Top-Rated Products** | 1. Check if products appear with details.<br>2. Verify links work. | Products show with correct info.<br>Links work. | &check; |
+| **Navigation Menu** | 1. Click each link.<br>2. Test on mobile. | Links go to the right pages.<br>Works on mobile. | &check; |
+| **Footer** | 1. Test newsletter.<br>2. Verify links. | Newsletter works.<br>Footer links work. | &check; |
+
+### Product List
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Product Display** | 1. Check if all available products appear.<br>2. Test if the correct category name is displayed.<br> | All products show correctly.<br>Category names and images are correct. | &check; |
+| **Product Details Link** | 1. Click on a product.<br>2. Check if it redirects to the product detail page. | Redirects to correct product detail page. | &check; |
+| **Admin Features** | 1. Check visibility of "Edit" and "Delete" links for admins.<br>2. Test if "Edit" and "Delete" links work. | Admin links appear only for superusers.<br>Edit and Delete links work. | &check; |
+| **Free Delivery Info** | 1. Check if the free delivery threshold is displayed.<br>2. Verify the threshold value is correct. | Free delivery info shows correctly.<br>Value is accurate. | &check; |
+
+### Product Detail
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Product Image** | 1. Verify product image appears.<br>2. Test link to open image in a new tab. | Product image shows.<br>Link works. | &check; |
+| **Product Description** | 1. Check if product description is visible. | Description shows correctly. | &check; |
+| **Add to Wishlist** | 1. Test "Add to Wishlist" button for logged-in users.<br>2. Verify button redirects to login for guests. | Button works for logged-in users.<br>Redirects to login for guests. | &check; |
+| **Add to Bag** | 1. Test the "Add to Bag" button.<br>2. Verify the correct quantity input.<br>3. Ensure it adds product to the bag. | Button adds product to bag.<br>Quantity input works. | &check; |
+| **Admin Features** | 1. Check visibility of "Edit" and "Delete" links for admins.<br>2. Test if "Edit" and "Delete" links work. | Admin links appear only for superusers.<br>Edit and Delete links work. | &check; |
+
+### Add/Edit/Delete Product
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Product Form** | 1. Check if form loads correctly.<br>2. Verify that form submission works. | Form loads with all fields.<br>Form submits correctly. | &check; |
+| **Edit Product Form** | 1. Check if form loads with pre-filled data.<br>2. Test if all fields are editable.<br>3. Verify form submission works. | Form loads with correct data.<br>Fields are editable.<br>Form submits correctly. | &check; |
+| **Delete Confirmation** | 1. Check if delete confirmation page loads.<br>2. Verify that product name appears.<br>3. Test if "Confirm Delete" works.<br>4. Test if "Cancel" redirects correctly. | Confirmation page loads.<br>Correct product name shows.<br>Delete and Cancel buttons work. | &check; |
+
+### Bag
+| Feature  | Test | Result | Status |
+|----------|------|--------|--------|
+| **Product Image** | 1. Verify product image appears.| Product image displays correctly.<br>Fallback image shows if no product image. | &check; |
+| **Product Info** | 1. Verify product info appears.<br>2. Check if subtotal updates correctly. | Product info displays correctly.<br>Subtotal updates. | &check; |
+| **Quantity Buttons** | 1. Test increment and decrement buttons.<br>2. Verify quantity input accepts values. | Buttons increment/decrement<br>and input works as expected. | &check; |
+| **Remove Item** | 1. Verify "Remove" button removes item from the bag.<br>2. Check if bag updates correctly after removal. | Item is removed.<br>Bag updates accordingly. | &check; |
+| **Order Summary** | 1. Verify Bag Total, Delivery and Grand Total display correctly. | Totals show correctly with free delivery message when eligible | &check; |
+| **Checkout** | 1. Verify "Secure Checkout" button redirects to checkout page. | Button redirects to checkout page. | &check; |
+| **Keep Shopping** | 1. Test "Keep Shopping" button redirects to product list. | Button redirects to product list page. | &check; |
+| **Empty Message** | 1. Verify "Your bag is empty" message shows when no items in the bag. | Message displays correctly. | &check; |
+
+### Checkout
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Order Summary** | 1. Verify order items appear.<br>2. Ensure subtotals and grand total update correctly. | Order items display correctly.<br>Totals update. | &check; |
+| **Product Image** | 1. Check if product images appear for each item. | Product images display correctly. | &check; |
+| **Delivery Address** | 1. Verify delivery address displays correctly. | Address show correctly. | &check; |
+| **Order Form** | 1. Verify all form fields load correctly.<br>2. Test form submission. | Form loads with all fields.<br>Form submits correctly. | &check; |
+| **Save Info Option** | 1. Test checkbox for saving delivery info.<br>2. Verify link to create or login to an account. | Checkbox works.<br>Links redirect to login/signup. | &check; |
+| **Payment Section** | 1. Verify Stripe card input is visible.<br>2. Check if errors are displayed for invalid inputs. | Card input displays.<br>Errors appear for invalid data. | &check; |
+| **Complete Order** | 1. Test "Complete Order" button.<br>2. Verify confirmation page redirects. | Button redirects to confirmation page. | &check; |
+| **Back to Bag** | 1. Verify "Adjust Bag" button redirects to the bag page. | Button redirects to bag page. | &check; |
+| **Confirmation** | 1. Verify confirmation message after successful order.<br>2. Check if order number is shown. | Confirmation message and order number display. | &check; |
+| **Continue Shopping** | 1. Verify "Continue Shopping" button redirects to product list. | Button redirects to product list. | &check; |
+
+### Profile
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Profile Heading** | 1. Verify "My Profile" heading is displayed. | Heading displays correctly. | &check; |
+| **Delivery Information Form** | 1. Verify delivery form is displayed.<br>2. Test form submission and updates. | Form is displayed correctly.<br>Form updates with valid input. | &check; |
+| **Order History Section** | 1. Verify orders are displayed.<br>2. Check if "No orders found" message displays when empty. | Orders show correctly.<br>No orders message appears if applicable. | &check; |
+| **Order Link** | 1. Verify clicking an order link redirects to order details. | Link redirects correctly to order history. | &check; |
+
+### Wishlist
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Wishlist Heading** | 1. Verify "My Wishlist" heading is displayed. | Heading is displayed correctly. | &check; |
+| **Wishlist Items Display** | 1. Check if wishlist items are displayed when available.<br>2. Ensure "Your wishlist is empty" message appears when no items exist. | Wishlist items show correctly.<br>Empty wishlist message appears if applicable. | &check; |
+| **Product Details Button** | 1. Verify "View" button for each item links to product detail page. | Button redirects correctly to product detail page.         | &check; |
+| **Remove Item Button** | 1. Test if "Remove" button removes the item from the wishlist.<br>2. Check if wishlist updates after removal. | Item is removed correctly.<br>Wishlist updates after removal. | &check; |
+| **Clear Wishlist Button** | 1. Verify "Clear Wishlist" button.<br>2. Test if clicking clears all wishlist items and redirects correctly. | Button clears the wishlist and redirects to wishlist page. | &check; |
+| **Confirm Deletion Page** | 1. Verify deletion confirmation page appears when clearing the wishlist.<br>2. Test if confirmation button deletes all items. | Confirmation page displays correctly.<br>Items are deleted after confirmation. | &check; |
+| **Cancel Button** | 1. Verify "Cancel" button redirects back to the wishlist without deleting items. | Button redirects correctly without deletion. | &check; |
+
+### FAQ
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **FAQ List Heading** | 1. Verify the "Frequently Asked Questions" heading is displayed. | Heading is displayed correctly. | &check; |
+| **FAQ Display** | 1. Check if FAQs are displayed properly with question and answer. | FAQs show correctly with questions and answers. | &check; |
+| **Edit/Delete Links** | 1. Ensure "Edit" and "Delete" links are visible for admin users.<br>2. Verify that these links redirect to the respective edit or delete page. | Links are shown for admin users only.<br>Redirection works correctly. | &check; |
+| **Published/Not Published Badge** | 1. Check if the "Published" and "Not Published" badges are displayed for each FAQ. | Badges display correctly based on FAQ status. | &check; |
+| **Add FAQ Button** | 1. Verify that the "Add FAQ" button is available for admin users.<br>2. Test if clicking redirects to the "Add FAQ" form. | Button displays for admin users.<br>Redirection works correctly. | &check; |
+| **Add FAQ Form** | 1. Check if the form includes all fields.<br>2. Verify form submission works and redirects to FAQ list. | Form includes necessary fields.<br>Form submits and redirects correctly. | &check; |
+| **Edit FAQ Form** | 1. Verify "Edit FAQ" page contains pre-filled form with the selected FAQ details.<br>2. Ensure changes are saved correctly. | Form is pre-filled with current data.<br>Changes are saved and reflected. | &check; |
+| **Delete FAQ Confirmation** | 1. Test if "Delete FAQ" redirects to confirmation page.<br>2. Verify FAQ deletion works after confirmation. | Confirmation page appears.<br>FAQ is deleted after confirmation. | &check; |
+| **Cancel Delete** | 1. Verify "Cancel" button redirects back to FAQ list without deletion. | Button redirects correctly without deleting the FAQ. | &check; |
+
+### About Us
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Page (Sub-)Heading** | 1. Verify that all dynamic headings are displayed. | Headings are displayed correctly. | &check; |
+| **About Us Content** | 1. Check if the content or placeholder are displayed. | Content is displayed correctly. | &check; |
+| **Contact Us Button** | 1. Verify the "Contact Us" button is displayed.<br>2. Check if the button redirects to the contact page. | Button is visible.<br>Redirection to contact page works. | &check; |
+
+### Contact Us
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Page Heading** | 1. Verify the "Contact Us" heading is displayed at the top of the form. | Heading is displayed correctly. | &check; |
+| **Form Display** | 1. Ensure the contact form is visible with all fields. | Contact form is displayed correctly. | &check; |
+| **Form Submission** | 1. Submit the form with data.<br>2. Verify that the submission is processed accordingly. | Form submission works as expected. | &check; |
+
+### Allauth Core Functionality
+
+| Feature | Test | Result | Status |
+|---------|------|--------|--------|
+| **Registration** | Fill out and submit the form. | User is registered or shown appropriate error messages for issues. | &check; |
+| **Login** | Enter credentials and submit the form. | User is logged in or shown appropriate error messages for issues. | &check; |
+| **Logout** | Confirm logout. | User is logged out. | &check; |
+| **Password Reset** | Submit an email for password reset.<br>3. Follow the email link and set a new password. | User receives reset email. | &check; |
 
 [Back to Top](#top)
 
