@@ -15,13 +15,24 @@ This project was developed as part of Code Institute's Full Stack Software Devel
 
 ## Project Management
 
-### Project Board
+### Project Board - User Stories
 
 [Notion](https://www.notion.so/) is the application I used to work on my [Project Board](https://www.notion.so/Urban-Odyssey-12a9d8c205da8089a485cf101b551234?pvs=4) using an agile approach.
 
+Visit the live website here: [Urban Odyssey User Stories](https://intriguing-caper-d96.notion.site/12b9d8c205da8025af09d76a0dcb2f6a?v=d6e9d0b76d72415dac48133e5cab38d6)
+
 [Back to Top](#top)
 
-## Design Choices
+### Entity-Relationship Diagram (ERD)
+
+The ERD below reflects the current state of the project. It shows the relationships between different entities in the Urban Odyssey system.
+
+<details>
+<summary><strong>ERD</strong></summary>
+
+![ERD](./docs/readme_images/erd.png)
+
+</details>
 
 ### Wireframes
 
@@ -94,17 +105,6 @@ I created wireframes for the key page sites using [Balsamiq](https://balsamiq.co
 <summary><strong>Contact Us</strong></summary>
 
 ![Contact Wireframe](./docs/readme_images/wireframes-contact.png)
-
-</details>
-
-### Database Design: Entity-Relationship Diagram (ERD)
-
-The ERD below reflects the current state of the project. It shows the relationships between different entities in the Urban Odyssey system.
-
-<details>
-<summary><strong>ERD</strong></summary>
-
-![ERD](./docs/readme_images/erd.png)
 
 </details>
 
