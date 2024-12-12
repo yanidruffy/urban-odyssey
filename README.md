@@ -102,9 +102,9 @@ I created wireframes for the key page sites using [Balsamiq](https://balsamiq.co
 The ERD below reflects the current state of the project. It shows the relationships between different entities in the Urban Odyssey system.
 
 <details>
-<summary><strong>Contact Us</strong></summary>
+<summary><strong>ERD</strong></summary>
 
-![ERD Wireframe](./docs/readme_images/erd.png)
+![ERD](./docs/readme_images/erd.png)
 
 </details>
 
@@ -265,7 +265,7 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
-## User Profiles
+### User Profiles
 - **Profile Management**: Users can view and update their delivery information.
 - **Save Delivery Information**: Users have the option to save their delivery details for future orders.
 
@@ -330,7 +330,7 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
-## Error Handling
+### Error Handling
 - **Custom Error Pages**: Custom 404 and 500 error pages to ensure a user-friendly experience in case of missing pages or server errors.
 
 <details>
@@ -340,7 +340,7 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
-## Authentication
+### Authentication
 - **User Registration & Login**: Secure user authentication with registration, login, and password recovery features through Allauth.
 
 <details>
@@ -365,6 +365,56 @@ These strategies and future plans are designed to attract and retain customers w
 ## Testing
 
 ### Validation
+
+#### HTML Validation
+
+HTML files have been validated using [W3C Markup Validation Service](https://validator.w3.org/)
+
+| Page            | Errors | Warnings | Info |
+|-----------------|--------|----------|------|
+| homepage        | 0      | 0        | 0    |
+| products        | 0      | 0        | 0    |
+| product detail  | 1      | 0        | 0    |
+| product add     | 0      | 0        | 1    |
+| product edit    | 0      | 0        | 1    |
+| product delete  | 0      | 0        | 1    |
+| bag             | 0      | 0        | 0    |
+| checkout        | 0      | 0        | 0    |
+| checkout success| 1      | 0        | 0    |
+| profile         | 0      | 0        | 1    |
+| wishlist        | 0      | 0        | 1    |
+| wishlist remove | 0      | 0        | 1    |
+| faq             | 0      | 0        | 0    |
+| faq add         | 0      | 0        | 0    |
+| faq edit        | 0      | 0        | 0    |
+| faq delete      | 0      | 0        | 0    |
+| about           | 0      | 0        | 0    |
+| contact         | 0      | 0        | 0    |
+| login           | 0      | 0        | 0    |
+| signup          | 0      | 0        | 0    |
+| logout          | 0      | 0        | 0    |
+
+<details>
+<summary><strong>HTML Validation Result Images</strong></summary>
+
+![Homepage Validation](./docs/testing_images/html-homepage-validation.png)
+![Products Validation](./docs/testing_images/html-products-validation.png)
+
+![Bag Validation](./docs/testing_images/html-bag-validation.png)
+![Checkout Validation](./docs/testing_images/html-checkout-validation.png)
+
+![Profile Validation](./docs/testing_images/html-profile-validation.png)
+![Wishlist Validation](./docs/testing_images/html-wishlist-validation.png)
+![FAQ Validation](./docs/testing_images/html-faq-validation.png)
+![About Validation](./docs/testing_images/html-about-validation.png)
+![Contact Validation](./docs/testing_images/html-contact-validation.png)
+![Login Validation](./docs/testing_images/html-login-validation.png)
+![Signup Validation](./docs/testing_images/html-signup-validation.png)
+![Logout Validation](./docs/testing_images/html-logout-validation.png)
+
+</details>
+
+[Back to Top](#top)
 
 #### CSS Validation
 
