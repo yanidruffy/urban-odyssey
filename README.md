@@ -211,6 +211,13 @@ These strategies and future plans are designed to attract and retain customers w
 
 </details>
 
+<details>
+<summary><strong>Newsletter Confirmation Screenshot</strong></summary>
+
+![Newsletter Confirmation Screenshot](./docs/readme_images/newsletter_confirmation.png)
+
+</details>
+
 ### Product List
 - **Product Categories**: Displays products from Aer, Peak Design, and tomtoc, when it is available.
 - **Product Details**: Each product includes an image, product name, prices, and ratings, helping users make informed decisions.
@@ -276,6 +283,13 @@ These strategies and future plans are designed to attract and retain customers w
 <summary><strong>Checkout Success Screenshot</strong></summary>
 
 ![Checkout Success Screenshot](./docs/readme_images/checkout-success-screenshot.png)
+
+</details>
+
+<details>
+<summary><strong>Stripe Screenshot</strong></summary>
+
+![Stripe Webhook Screenshot](./docs/readme_images/stripe-webhook.png)
 
 </details>
 
@@ -836,18 +850,17 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 ## **Credits**
 
-- **Aer, Peak Design, and tomtoc**: Brands featured in the product images. All used for learning purposes, no harm intended.
-- **Balsamiq**: Used for creating wireframes.
-- **Boutique Ado Project by Code Institute**: The foundation for this project, serving as a starting point for the development of Urban Odyssey.
-- **ChatGPT**: Used for content text, and debugging.
-- **Coolors**: Used for selecting color schemes for the project.
-- **DeepAI**: Used for generating AI-based images for my mockup Facebook page.
-- **Favicon**: Provided the favicon used in the project.
-- **Google Fonts**: Provided 'Montserrat' font used in the project.
-- **Heroku**: Cloud platform used for deploying the application.
-- **Brevo**: Email marketing service for campaigns.
-- **Temp-Mail**: Provided temporary email addresses for testing purposes.
-- **TinyPNG**: Optimized images for faster load times.
+- **[Aer](https://aersf.com/), [Peak Design](https://www.peakdesign.com/eu/), and [tomtoc](https://www.tomtoc.com/)**: Brands featured in the product images. All used for learning purposes, no harm intended.
+- **[Balsamiq](https://balsamiq.com/)**: Used for creating wireframes.
+- **[Boutique Ado Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) by Code Institute**: The foundation for this project, serving as a starting point for the development of Urban Odyssey.
+- **[ChatGPT](https://chatgpt.com/)**: Used for content text, and debugging.
+- **[Coolors](https://coolors.co/)**: Used for selecting color schemes for the project.
+- **[DeepAI](https://deepai.org/)**: Used for generating AI-based images for my mockup Facebook page.
+- **[Favicon](https://favicon.io/)**: Provided the favicon used in the project.
+- **[Google Fonts](https://fonts.google.com/)**: Provided 'Montserrat' font used in the project.
+- **[Brevo](https://www.brevo.com/de/)**: Email marketing service for campaigns.
+- **[Temp-Mail](https://temp-mail.org/de/)**: Provided temporary email addresses for testing purposes.
+- **[TinyPNG](https://tinypng.com/)**: Optimized images for faster load times.
 
 [Back to Top](#top)
 
@@ -855,9 +868,9 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 I would like to express my gratitude to the following individuals and resources for their support:
 
-- **Code Institute**: Special thanks to tutor support, my cohort facilitator, and my mentor for their continuous assistance throughout the development process.
+- **[Code Institute](https://codeinstitute.net/global/)**: Special thanks to tutor support, my cohort facilitator, and my mentor for their continuous assistance throughout the development process.
 
-- **Mentors and Peers**: Special thanks to my colleagues who supported and encouraged me throughout the entire course, staying with me until the finish line. A heartfelt thank you to Sebastian and Marcello for their invaluable feedback, motivation, and camaraderie during this journey.
+- **Mentors and Peers**: Special thanks to my colleagues who supported and encouraged me throughout the entire course, staying with me until the finish line. To [Marceillo](https://github.com/Marceillo) and [Sebastian](https://github.com/Mienjung97/) for their invaluable feedback, motivation, and camaraderie during this journey.
 
 - **Family and Friends**: To my family and friends for their constant support, understanding, and encouragement, which gave me the strength to persevere and complete my program.
 
