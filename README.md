@@ -21,8 +21,6 @@ This project was developed as part of Code Institute's Full Stack Software Devel
 
 Visit the live website here: [Urban Odyssey User Stories](https://intriguing-caper-d96.notion.site/12b9d8c205da8025af09d76a0dcb2f6a?v=d6e9d0b76d72415dac48133e5cab38d6)
 
-[Back to Top](#top)
-
 ### Entity-Relationship Diagram (ERD)
 
 The ERD below reflects the current state of the project. It shows the relationships between different entities in the Urban Odyssey system.
@@ -673,8 +671,6 @@ Performance and Accessibility need some work, Best Practices and SEO scores are 
 [Back to Top](#top)
 
 ## Encountered Bugs
-
-## Bugs
 
 | **Date** | **Issue** | **Solution** |
 |----------|-----------|--------------|
