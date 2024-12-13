@@ -671,6 +671,8 @@ Performance and Accessibility need some work, Best Practices and SEO scores are 
 
 Further bug fixes can be found in my commits.
 
+[Back to Top](#top)
+
 ## Deployment
 
 ### Preparing for Deployment
@@ -723,9 +725,9 @@ Make sure to replace the placeholders with your actual values.
 ```python manage.py runserver```
 Open a browser and visit the page. Check for DEBUG settings (DEVELOPMENT in env.py).
 
-## Heroku Deployment
+### Heroku Deployment
 
-### 1. Heroku Setup
+#### 1. Heroku Setup
 1. Create an account on [Heroku](https://www.heroku.com/) if you don't already have one.
 2. After logging in, click **New** in the dashboard and select **Create new app**.
 3. Enter a unique app name, choose your region, and click **Create App**.
@@ -738,7 +740,7 @@ Open a browser and visit the page. Check for DEBUG settings (DEVELOPMENT in env.
 
 </details>
 
-### 2. Connecting to a GitHub Repository
+#### 2. Connecting to a GitHub Repository
 1. Navigate to the **Deploy** tab of your Heroku app.
 2. Under **Deployment method**, select **GitHub**.
 3. Authenticate and search for your repository name, then click **Connect**.
@@ -750,7 +752,7 @@ Open a browser and visit the page. Check for DEBUG settings (DEVELOPMENT in env.
 
 </details>
 
-### 3. Configuring Environment Variables
+#### 3. Configuring Environment Variables
 1. Navigate to the **Settings** tab in your Heroku app dashboard.
 2. Click **Reveal Config Vars** to add the necessary environment variables.
 3. Include all required variables for your application
@@ -764,7 +766,7 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 </details>
 
-### 4. Adding Buildpacks
+#### 4. Adding Buildpacks
 1. Scroll down in the **Settings** tab to the **Buildpacks** section.
 2. Add the following buildpack:
 	- `python`
@@ -776,7 +778,7 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 </details>
 
-### 5. Deploying the Application
+#### 5. Deploying the Application
 1. In the **Deploy** tab, scroll to **Manual Deploy**.
 2. Select your branch (e.g., `main`) and click **Deploy Branch**.
 3. Optionally, enable **Automatic Deploys** for continuous deployment.
@@ -788,7 +790,7 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 </details>
 
-### 6. Finalizing Deployment
+#### 6. Finalizing Deployment
 1. After deployment, you’ll see a success message with a **View** button.
 2. Click **View** to visit your live site.
 
@@ -801,9 +803,9 @@ Ensure that each variable corresponds to a value defined in your project's setti
 
 [Back to Top](#top)
 
-### Technologies Used
+## Technologies Used
 
-#### Libraries & Frameworks
+### Libraries & Frameworks
 - **Django**: Backend framework for structuring the application.
 - **Python**: Programming language used for development.
 - **Bootstrap 5**: Frontend framework for responsive design.
@@ -815,23 +817,24 @@ Ensure that each variable corresponds to a value defined in your project's setti
 - **Pillow**: Image processing library for handling images.
 - **Graphviz**: Creates visual diagrams and graphs.
 
-#### Payment & Cloud Services
+### Payment & Cloud Services
 - **Stripe**: Payment processing service for transactions.
 - **AWS S3**: Cloud storage for files.
 - **Heroku**: Cloud platform for app deployment.
 
-#### Frontend Technologies
+### Frontend Technologies
 - **HTML**: Markup language for structuring content.
 - **CSS**: Stylesheet language for web page design.
 - **JavaScript**: Interactivity and dynamic content.
 
-#### Other Tools & Integrations
+### Other Tools & Integrations
 - **PostgreSQL**: Database for storing data.
 - **CodeInstitute IDE**: Online IDE using Gitpod.
 - **VS Code**: Editor for writing code.
 
+[Back to Top](#top)
 
-### **Credits**
+## **Credits**
 
 - **Aer, Peak Design, and tomtoc**: Brands featured in the product images. All used for learning purposes, no harm intended.
 - **Balsamiq**: Used for creating wireframes.
@@ -845,3 +848,17 @@ Ensure that each variable corresponds to a value defined in your project's setti
 - **Brevo**: Email marketing service for campaigns.
 - **Temp-Mail**: Provided temporary email addresses for testing purposes.
 - **TinyPNG**: Optimized images for faster load times.
+
+[Back to Top](#top)
+
+## Acknowledgements
+
+I would like to express my gratitude to the following individuals and resources for their support:
+
+- **Code Institute**: Special thanks to tutor support, my cohort facilitator, and my mentor for their continuous assistance throughout the development process.
+
+- **Mentors and Peers**: Special thanks to my colleagues who supported and encouraged me throughout the entire course, staying with me until the finish line. A heartfelt thank you to Sebastian and Marcello for their invaluable feedback, motivation, and camaraderie during this journey.
+
+- **Family and Friends**: To my family and friends for their constant support, understanding, and encouragement, which gave me the strength to persevere and complete my program.
+
+[Back to Top](#top)
