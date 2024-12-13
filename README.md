@@ -658,6 +658,19 @@ Performance and Accessibility need some work, Best Practices and SEO scores are 
 
 [Back to Top](#top)
 
+## Encountered Bugs
+
+## Bugs
+
+| **Date** | **Issue** | **Solution** |
+|----------|-----------|--------------|
+| 22.11. | Search bar did not return results for "Peak Design." | Updated search functionality to include category name |
+| 24.11. | Delivery fee appeared when the bag was empty. | Adjusted `contexts.py` to ensure delivery fee is only calculated when the total is greater than 0. |
+| 26.11. | Quantity input could go below 1, and decrement button was not disabled. | Added IDs to inputs and updated JavaScript to enable/disable buttons based on the input value. |
+| 09.12. | Credit card input field overlaps at a screen size of 320px. | Unsolved |
+
+Further bug fixes can be found in my commits.
+
 ## Deployment
 
 ### Preparing for Deployment
